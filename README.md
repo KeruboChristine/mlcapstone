@@ -1,4 +1,4 @@
-## Predicting heart disease using machine learning
+## Predicting heart disease Prediction using machine learning
 
 i will use a Python-based machine learning and data science libraries in an attempt to build a machine learning model capable of predicting whether or not someone has heart disease based on their medical attributes.
 
@@ -16,7 +16,10 @@ In a statement,
 Given a patient’s clinical measurements, can we accurately predict whether they are likely to have heart disease or not?
 
 2. Data
- it is available on Kaggle. https://www.kaggle.com/datasets/sumaiyatasmeem/heart-disease-classification-dataset.
+ it is available on Kaggle. https://www.kaggle.com/datasets/mfarhaannazirkhan/heart-dataset
+
+ This dataset contains 1,888 records merged from five publicly available heart disease datasets. It includes 14 features that are crucial for predicting heart attack and stroke risks, covering both medical and demographic factors. Below is a detailed description of each feature.
+
 
 3. Evaluation
 If we can reach 95% accuracy at predicting whether or not a patient has heart disease during the proof of concept, we'll pursue the project.
@@ -40,22 +43,15 @@ trestbps - resting blood pressure (in mm Hg on admission to the hospital) anythi
 
 chol - serum cholestoral in mg/dl
 
-serum = LDL + HDL + .2 * triglycerides
-above 200 is cause for concern
 
 fbs - (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false)
 '>126' mg/dL signals diabetes
 
 restecg - resting electrocardiographic results
-0: Nothing to note
-1: ST-T Wave abnormality
-can range from mild symptoms to severe problems
-signals non-normal heart beat
+ Values: 0 = Normal, 1 = ST-T wave abnormality, 2 = Left ventricular hypertrophy.
 
-2: Possible or definite left ventricular hypertrophy
-Enlarged heart's main pumping chamber
 
-thalach - maximum heart rate achieved
+thalach - maximum heart rate achieved(Numeric)
 
 exang - exercise induced angina (1 = yes; 0 = no)
 
@@ -71,12 +67,10 @@ colored vessel means the doctor can see the blood passing through
 the more blood movement the better (no clots)
 
 thal - thalium stress result
-1,3: normal
+1,3: normal Values: 1 = Normal, 2 = Fixed defect, 3 = Reversible defect.
 
-6: fixed defect: used to be defect but ok now
-7: reversable defect: no proper blood movement when excercising
 
-target - have disease or not (1=yes, 0=no) (= the predicted attribute)
+target -Outcome variable (heart attack risk). Values: 1 = more chance of heart attack, 0 = less chance of heart attack.
 
 5.Tools
 
